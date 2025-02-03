@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="navbar-left">
         <div className="logo">
           <img src="https://via.placeholder.com/40" alt="App Logo" />
-          <span className="brand-name">JioCinema</span>
+          <span className="brand-name">V-Cinema</span>
         </div>
         <button className="upgrade-btn">
           <FaCrown className="crown-icon" />
@@ -17,7 +17,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Middle Section: Navigation Links */}
+      {/* Navigation Links - Aligned to Left */}
       <ul className="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Sports</a></li>
@@ -33,7 +33,7 @@ const Navbar = () => {
           <input type="text" placeholder="Movies, Shows and more" className="search-bar" />
           <FaMicrophone className="mic-icon" />
         </div>
-        <FaUserCircle className="user-icon" size={30} />
+        <FaUserCircle className="user-icon" size={35} />
       </div>
     </nav>
   );

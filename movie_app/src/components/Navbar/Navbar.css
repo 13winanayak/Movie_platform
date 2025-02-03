@@ -1,34 +1,42 @@
-/* Navbar Container */
+/* Navbar Container - Full Width Without Margins */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #121212;
-    padding: 10px 20px;
+    padding: 15px 0;  /* Removed left and right padding */
     color: white;
     font-family: Arial, sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
   }
   
   /* Left Section: Logo + Upgrade */
   .navbar-left {
     display: flex;
     align-items: center;
+    gap: 20px;
+    padding-left: 40px; /* Added padding only on the left */
   }
   
   .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
   }
   
   .logo img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
   }
   
   .brand-name {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
   }
   
@@ -37,14 +45,14 @@
     background-color: transparent;
     border: 1px solid #f39c12;
     color: #f39c12;
-    padding: 6px 12px;
+    padding: 8px 15px;
     border-radius: 20px;
-    font-size: 14px;
-    margin-left: 10px;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     cursor: pointer;
+    
   }
   
   .crown-icon {
@@ -55,23 +63,27 @@
     background-color: rgba(243, 156, 18, 0.2);
   }
   
-  /* Middle Section: Navigation Links */
+  /* Navigation Links - Aligned Left */
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin: 0;
     padding: 0;
+    font-size: 18px;
+    flex: 1;
+    justify-content: flex-start;
+    padding-left: 45px;
   }
   
   .nav-links li {
     display: inline;
+    font-size: 23px;
   }
   
   .nav-links a {
     text-decoration: none;
-    color: white;
-    font-size: 16px;
+    color: rgb(209, 198, 198);
     transition: color 0.3s ease-in-out;
   }
   
@@ -87,34 +99,39 @@
   .navbar-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+    padding-right: 50px; /* Added padding only on the right */
   }
   
   .search-container {
     display: flex;
     align-items: center;
     background-color: #292929;
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    height: 24px;
+    margin-right: 27px;
   }
+
   
   .search-bar {
     background: transparent;
     border: none;
     outline: none;
     color: white;
-    font-size: 14px;
-    width: 200px;
+    font-size: 16px;
+    width: 250px;
   }
   
   .search-icon, .mic-icon {
     color: white;
-    margin-right: 8px;
+    margin-right: 10px;
   }
   
   .user-icon {
     cursor: pointer;
     color: #a855f7;
+    font-size: 35px;
   }
   
   .user-icon:hover {
