@@ -8,15 +8,20 @@
 }
 
 .carousel-wrapper{
-  height: 80%;
+  height: 670px;
+  background-image: url('/src/assets/pixelcut-export.jpeg'); /* Path to your image */
+  margin-top: -21px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 /* gives us the illusion of a "centered" slide */
 .carousel__slider {
-  padding-left: 25%;
-  padding-right: 25%;
-  margin-top: 90px;
-  height: 640px;
+  padding-left:20%;
+  padding-right: 20%;
+  padding-top: 40px;
+  margin-top: 100px;
+  height: 570px;
 }
 
 /* gives us the illusion of spaces between the slides */
@@ -25,9 +30,9 @@
   height: calc(100% - 20px);
   left: 10px;
   top: 10px;
-  background-color: burlywood;
+  background-color: black;
   border-radius: 15px; /* Uniform rounded corners on all sides */
-  overflow: hidden; /
+  overflow: hidden; 
 }
 
 /* Positioning back and next buttons at the right bottom corner */
@@ -44,7 +49,7 @@
   bottom: 20px;
   right: 20px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .carousel__button {
@@ -59,6 +64,7 @@
   color: white;
   font-size: 20px;
   cursor: pointer;
+  margin-bottom: 50px;
   transition: background-color 0.3s ease;
 }
 

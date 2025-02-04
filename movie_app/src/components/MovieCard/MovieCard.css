@@ -1,6 +1,7 @@
 /* MovieCard.css */
 .movie-card {
-    width: 250px;
+    width: 200px;
+    background-color: red;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -9,10 +10,12 @@
   }
   
   .movie-image img {
-    width: 100%;
+    width: 90%;
     height: 300px;
     object-fit: cover;
   }
+
+  
   
   .movie-details {
     padding: 10px;

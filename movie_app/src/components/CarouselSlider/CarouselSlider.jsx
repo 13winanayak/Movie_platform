@@ -10,14 +10,14 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import "./CarouselSlider.css";
 
 // Import images from the assets folder
-import animal from '/src/assets/animal.png';
-import bahubali from '/src/assets/bahubali.png';
-import jawan from '/src/assets/jawan.png';
-import joker from '/src/assets/joker.png';
-import kalki from '/src/assets/kalki.png';
-import kgf from '/src/assets/kgf.png';
-import RRR from '/src/assets/RRR.png';
-import spiderman from '/src/assets/spiderman.png';
+import animal from '/src/assets/s1.png';
+import bahubali from '/src/assets/s2.png';
+import jawan from '/src/assets/s3.png';
+import joker from '/src/assets/s4.png';
+import kalki from '/src/assets/s5.png';
+import kgf from '/src/assets/s6.png';
+import RRR from '/src/assets/s7.png';
+import spiderman from '/src/assets/s8.png';
 
 const CarouselSlider = () => {
   const totalSlides = 8; // Total number of slides
