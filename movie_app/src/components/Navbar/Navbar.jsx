@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { NavLink, useNavigate } from 'react-router-dom'
 import { FaUserCircle, FaSearch, FaCrown, FaMicrophone } from "react-icons/fa";
 
 const Navbar = () => {
@@ -19,11 +20,19 @@ const Navbar = () => {
 
       {/* Navigation Links - Aligned to Left */}
       <ul className="nav-links">
-        <li><a href="#">Home</a></li>
+      <NavLink to='/' >
+          <li className='py-1'>HOME</li>
+        </NavLink>
+        <NavLink to='/sports' >
         <li><a href="#">Sports</a></li>
+        </NavLink>
+        <NavLink to='/movies' >
         <li><a href="#">Movies</a></li>
+        </NavLink>
+        <NavLink to='/tvShows' >
         <li><a href="#">TV Shows</a></li>
-        <li className="dropdown"><a href="#">More ⌄</a></li>
+        </NavLink>
+        <li className="dropdown"><a href="#">More</a></li>
       </ul>
 
       {/* Right Section: Search Bar and User Icon */}
