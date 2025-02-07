@@ -1,0 +1,88 @@
+/* Footer.css */
+
+footer {
+    background-color: #201f1f;
+    color: #fff;
+    margin-top: 10px;
+    padding-top: 2rem;
+    margin-top: 99px;
+    padding-bottom: 2rem;
+  }
+  
+  footer .footer-container {
+    max-width: 72rem; /* Equivalent to max-w-6xl */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 1.25rem; /* Equivalent to px-5 */
+    padding-right: 1.25rem;
+  }
+  
+  footer .footer-logo {
+    margin-bottom: 1.5rem;
+  }
+  
+  footer .footer-logo h2 {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: 700;  /* Equivalent to font-bold */
+  }
+  
+  footer .footer-logo p {
+    font-size: 0.875rem; /* Equivalent to text-sm */
+  }
+  
+  footer .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    footer .footer-links {
+      grid-template-columns: repeat(4, 1fr); /* For md:grid-cols-4 */
+    }
+  }
+  
+  footer .footer-links h3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  footer .footer-social a {
+    color: #fff;
+  }
+  
+  footer .footer-social a:hover {
+    color: #888;
+  }
+  
+  footer .footer-bottom {
+    font-size: 0.75rem; /* Equivalent to text-xs */
+  }
+  
+  /* Footer.css */
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Light transparent line */
+    margin: 1.5rem 0; /* Space above and below */
+  }
+  

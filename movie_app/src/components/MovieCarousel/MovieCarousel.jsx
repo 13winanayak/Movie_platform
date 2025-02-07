@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { useNavigate } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./MovieCarousel.css";
@@ -20,6 +21,7 @@ const NextArrow = ({ onClick }) => (
 );
 
 const MovieCarousel = ({ title, movies }) => {
+  const navigate = useNavigate();
   const settings = {
     dots: false,
     infinite: true,
@@ -38,10 +40,10 @@ const MovieCarousel = ({ title, movies }) => {
   return (
     <div className="movie-carousel">
       <h2 className="carousel-title">{title}</h2>
-      <Slider {...settings}>
+      <Slider {...settings} className="sl">
         {movies.map((movie, index) => (
-          <div key={index} className="movie-card">
-            <img src={movie.image} alt={movie.title} />
+          <div key={index} className="movie-card" >
+            <img src={movie.image} alt={movie.title}  onClick={() => navigate(`/${movie.slug}`)}/>
             <h3 className="movie-title">{movie.title}</h3>
             <p className="movie-languages">{movie.languages}</p>
           </div>

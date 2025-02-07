@@ -2,7 +2,7 @@
 import './MovieCard.css';  // Assuming custom styles for the card
 import PropTypes from 'prop-types';
 // eslint-disable-next-line react/prop-types
-const MovieCard = ({ movie }) => (
+const MovieCard = ({ movie }) => {(
   <div className="movie-card">
     <div className="movie-image">
       <img src={movie.image} alt={movie.title} />
@@ -14,6 +14,7 @@ const MovieCard = ({ movie }) => (
     </div>
   </div>
 );
+};
 
 export default MovieCard;
 //

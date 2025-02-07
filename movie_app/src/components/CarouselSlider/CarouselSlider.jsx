@@ -46,14 +46,14 @@ const CarouselSlider = () => {
       >
         <div className="carousel-wrapper">
           <Slider>
-            <Slide index={0}><img src={animal} alt="First Slide" /></Slide>
-            <Slide index={1}><img src={bahubali} alt="Second Slide" /></Slide>
-            <Slide index={2}><img src={jawan} alt="Third Slide" /></Slide>
-            <Slide index={3}><img src={joker} alt="Fourth Slide" /></Slide>
-            <Slide index={4}><img src={kalki} alt="Fifth Slide" /></Slide>
-            <Slide index={5}><img src={kgf} alt="Sixth Slide" /></Slide>
-            <Slide index={6}><img src={RRR} alt="Seventh Slide" /></Slide>
-            <Slide index={7}><img src={spiderman} alt="Eighth Slide" /></Slide>
+            <a href=""><Slide index={0}><img src={animal} alt="First Slide" /></Slide></a>
+            <a href=""><Slide index={1}><img src={bahubali} alt="Second Slide" /></Slide></a>
+            <a href=""><Slide index={2}><img src={jawan} alt="Third Slide" /></Slide></a>
+            <a href=""><Slide index={3}><img src={joker} alt="Fourth Slide" /></Slide></a>
+            <a href=""><Slide index={4}><img src={kalki} alt="Fifth Slide" /></Slide></a>
+            <a href=""><Slide index={5}><img src={kgf} alt="Sixth Slide" /></Slide></a>
+            <a href=""><Slide index={6}><img src={RRR} alt="Seventh Slide" /></Slide></a>
+            <a href=""><Slide index={7}><img src={spiderman} alt="Eighth Slide" /></Slide></a>
           </Slider>
           <div className="carousel__buttons">
             <ButtonBack className="carousel__button" onClick={handleBack} disabled={currentSlide === 0}>

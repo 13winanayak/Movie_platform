@@ -50,16 +50,7 @@ const hollywoodMovies = [
 ];
 
 
-const webseries = [
-  { title: "Pathaan", image: "/src/assets/m1.jpeg", languages: "Hindi" },
-  { title: "Jawan", image: "/src/assets/m1.jpeg", languages: "Hindi" },
-  { title: "RRR", image: "/src/assets/m1.jpeg", languages: "Telugu | Hindi" },
-  { title: "RRR", image: "/src/assets/Puspha.jpeg", languages: "Telugu | Hindi" },
-  { title: "RRR", image: "/src/assets/m1.jpeg", languages: "Telugu | Hindi" },
-  { title: "RRR", image: "/src/assets/m1.jpeg", languages: "Telugu | Hindi" },
-  { title: "RRR", image: "/src/assets/m1.jpeg", languages: "Telugu | Hindi" },
-  { title: "RRR", image: "/src/assets/m1.jpeg", languages: "Telugu | Hindi" },
-];
+
 
 export default function Home() {
   return (
@@ -72,7 +63,7 @@ export default function Home() {
 
       <MovieCarousel title="&nbsp;Bollywood&nbsp;&nbsp;&nbsp;Movies" movies={bollywoodMovies} />
       <MovieCarousel title="&nbsp;Hollywood&nbsp;&nbsp;&nbsp;Movies" movies={hollywoodMovies} />
-      <MovieCarousel title="web series" movies={webseries} />
+      
 </div>
   )
 }

@@ -9,7 +9,7 @@ const Navbar = () => {
       {/* Left Section: Logo and Upgrade Button */}
       <div className="navbar-left">
         <div className="logo">
-          <img src="https://via.placeholder.com/40" alt="App Logo" />
+          <img src='/src/assets/logo.jpeg' alt="App Logo" />
           <span className="brand-name">V-Cinema</span>
         </div>
         <button className="upgrade-btn">
@@ -23,16 +23,18 @@ const Navbar = () => {
       <NavLink to='/' >
           <li className='py-1'>HOME</li>
         </NavLink>
-        <NavLink to='/sports' >
+        <NavLink to='/ds' >
         <li><a href="#">Sports</a></li>
         </NavLink>
         <NavLink to='/movies' >
         <li><a href="#">Movies</a></li>
         </NavLink>
-        <NavLink to='/tvShows' >
+        <NavLink to='/tvshows' >
         <li><a href="#">TV Shows</a></li>
         </NavLink>
-        <li className="dropdown"><a href="#">More</a></li>
+        <NavLink to='/series' >
+        <li className="dropdown"><a href="#">Web series</a></li>
+        </NavLink>
       </ul>
 
       {/* Right Section: Search Bar and User Icon */}
