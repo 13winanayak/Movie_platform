@@ -1,1 +1,1 @@
-# Movie_platform
+A movie streaming platform built using React and Vite. Features include a responsive navbar, category-based movie listings (Hollywood, Bollywood, regional), a dynamic slider, and interactive movie cards. Designed with a clean UI for an engaging user experience.# Movie_platform
